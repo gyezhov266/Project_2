@@ -19,6 +19,6 @@ data:
               - localhost
             labels:
               job: app-logs
-              app: english-greeter
+              app: planetarium
               __path__: /logs/*.log
               namespace: default

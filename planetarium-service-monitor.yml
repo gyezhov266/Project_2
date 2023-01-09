@@ -1,15 +1,15 @@
 apiVersion: monitoring.coreos.com/v1
 kind: ServiceMonitor
 metadata:
-  name: english-service-monitor
+  name: planetarium-service-monitor
   # namespace: default 
   labels:
-    app: "english-greeter"
+    app: "planetarium"
 spec:
-  jobLabel: english-app
+  jobLabel: planetarium-app
   selector:
     matchLabels: 
-      app: english-greeter
+      app: planetarium
   endpoints:
   - port: http
     path: /actuator/prometheus

@@ -3,7 +3,7 @@ prometheus:
     # serviceMonitorNamespaceSelector: {default}
     serviceMonitorSelector:
       matchLabels:
-        app: english-greeter
+        app: planetarium
 
 grafana:
     namespaceOverride: "default"
